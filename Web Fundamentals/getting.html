@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>A-HA! moments: Getting Under Our Skin</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="science, history, facts..">
+        <meta name="description" content="interesting facts">
+        <link rel="stylesheet" href="./static/design2.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Prompt:wght@500&family=Raleway:wght@600;700&family=Rubik:wght@500&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <style>
+            .slides{
+                display:none;
+            }
+            .container{
+                position: relative;
+                width:550px;
+                height: 350px;
+                margin: auto auto;
+                
+            }
+            .prev, .next{
+                cursor: pointer;
+                position: absolute;
+                font-weight: bold;
+                font-size: 30px;
+                padding: 15px 15px;
+                top: 39%;
+                transition: all 0.1s ease;
+            }
+            .prev{
+                position:absolute;
+                left: -2px;
+            }
+            .next{
+                position:absolute;
+                right: -2px;
+            }
+            .dot{
+                cursor: pointer;
+                height: 5px;
+                width: 20px;
+                background-color:#bbb;
+                display: inline-block;
+                transition: background-color 0.7s ease;
+            }
+            .active, .dot:hover{
+                background-color: black;
+            }   
+            .fade{
+                animation-name: fade;
+                animation-duration: 0.7s;
+            }
+            .next:hover{
+                right: -7px;
+            }
+            .prev:hover{
+                left: -7px;
+            }
+            @keyframes fade{
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            @media screen and (max-width: 670px){
+                .container{
+                    width:380px;
+                    height: 230px;
+                }
+                .prev, .next{
+                    top: 32%;
+                }
+                .container img{
+                    height:200px;
+                }
+            }
+            @media screen and (max-width: 500px){
+                .container{
+                    width:275px;
+                    height: 179px;
+                    margin-left: -5px;
+                }
+                .container img{
+                    height:150px;
+                }
+            
+                .dotCont{
+                    width:275px;
+                    margin-left: -5px;
+                }
+                .prev{
+                    font-size: 25px;
+                    padding-left: 0px;
+                    top: 35%;
+                }
+                .next{
+                    font-size: 25px;
+                    padding-right: 0px;
+                    top: 35%;
+                }
+            }
+            </style>
+    </head>
+
+    <body>
+        <header class="flexbox">
+            <div class="logo">
+                <p><a href="index.html"><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></a><br>
+                A webpage project by Than Hui Ru</p>
+            </div>
+                <!--top right nav bar-->
+            <div class="topright">
+                    <a href="about.html">About</a>
+                    <a href="subscription.html">Subscription</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="references.html">References</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton">
+                    <img class="icon" src="./pictures/chevron-down.svg">
+                </button>
+                <div class="dropdown-content">
+                    <a href="about.html">About</a>
+                    <a href="subscription.html">Subscription</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="references.html">References</a>
+                </div>                       
+            </div>
+        </header>
+
+        <!--navigation bar-->
+        <div>
+            <nav class="rightnav">
+                <div class="about">
+                    <p><b class="navheading">ABOUT</b><br><br>Welcome to an issue of <b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span><sub>WEB1201</sub></b>. This is a webpage consists of information ranging from <span style="color: rgb(4, 183, 4)">Science</span> and <span style="color:blue">Technology</span> to <span style="color: purple">Economics</span> and <span style="color: rgb(190, 147, 66)">History</span>! Below is the list contents for this issue and hope you have a fun time reading!</p>
+                </div>
+
+                <div class="navcontent">
+                    <p><b class="navheading">CONTENTS</b></p>
+                    <ul>
+                        <li><a href="zoological.html">Zoological Tales</a></li>
+                        <li><a href="getting.html">Getting Under Our Skin</a></li>
+                        <li><a href="brain.html">Brain Discoveries</a></li>
+                        <li><a href="tech.html">Technology Era</a></li>
+                        <li><a href="troubleshooting.html">Troubleshooting The World</a></li>
+                        <li><a href="history.html">Facing Our Ugly History</a></li>
+                    </ul>
+                </div>
+
+                <div class="share">
+                    <p><b>Found this interesting? Share with a friend :)</b></p>
+                    <div class="iconbar">
+                        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/getting.html#"&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                        <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/getting.html#"&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                        <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/getting.html#"><img src="./pictures/twitter.svg"></a>
+                        <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/getting.html#""><img src="./pictures/whatsapp.svg"></a>
+                    </div>
+                </div>
+
+                <div class="credits">
+                    <p><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></p>
+                    <div>All information displayed in the webpage was from the source: TED-Ed. I did not write nor come up with these information.</div>
+                </div>
+            </nav>
+        </div>
+        <!--sidenav-->
+        <div class="sideicon">
+            <div class="iconbar">
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/getting.html#"&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/getting.html#"&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/getting.html#"><img src="./pictures/twitter.svg"></a>
+                <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/getting.html#""><img src="./pictures/whatsapp.svg"></a>
+            </div>
+        </div>
+ 
+        <main>
+            <article>
+                <div class="title">
+                    Getting Under The Skin
+                    <p class="title2">Why Is HIV So Hard To Cure?</p>
+                </div>
+    
+                    <div class="leftpic">
+                        <div class="composite">
+                            <img src="./pictures/HIV.jpeg" title="HIV viruses" height="150px">
+                            <img class="textmarginright" src="./pictures/syringe.jpeg" title="Possible transmission medium for HIV" height="150px">
+                        </div>
+                        <p><span style=" margin-top: 9px;margin-right: 5px; float:left; width: 1em; font-size:320%; font-family: 'Merriweather', serif; line-height:80%;">W</span>as <b>HIV</b>(<i>Human Immunodeficiency Virus</i>) ever cured and why is it so hard to eradicate HIV? In over 70 million HIV cases, only <b>one</b> man was every cured of HIV in 2008 and until now it remained the first. Before getting to examine why HIV is such a herculean task to cure, let&apos;s first get a little crash course on what is HIV and how it is connected to AIDS(<i>Acquired Immunodeficiency Syndrome</i>). 
+                        <p>HIV spreads through <b>exchanges of bodily fluids</b>: unprotected sex, contaminated needles are some of the leading causes of transmission. Once inside the body, HIV infects the immune system, particularly the helper T cells, which helps the body to fight out bacterial and fungal infections. HIV is a retrovirus-it writes its genetic code into the genome of infected cells and co-opts them into making more copies of itself. In the <b>first stage</b> of HIV infection, the virus <b>replicates within the T cells</b>, destroying them in the process. </p>
+                    </div>
+    
+                    <div>
+                        <div style="text-align: center">
+                            <div class="textmargin">
+                                <div class="container">
+                                    <div class="slides fade">
+                                        <img src="./pictures/fcell-09-622610-g001.jpg" title="How HIV spreads in the body" height="320px">
+                                        <div class="caption">How HIV spreads in the body</div>
+                                    </div>
+                                    <div class="slides fade">
+                                        <img style="margin-bottom: 0px;" src="./pictures/aids.jpeg" title="Relationship between HIV and AIDS" height="320px">
+                                        <div class="caption">Relation between AIDS and HIV</div>
+                                    </div>
+                                    <div class="prev" onclick="nextSlides(-1)">❮</div>
+                                    <div class="next" onclick="nextSlides(1)">❯</div>
+    
+                                </div>
+                                <div class="dotCont">
+                                    <span class="dot" onclick="currentSlides(0)"></span>
+                                    <span class="dot" onclick="currentSlides(1)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>During this stage patients often experience <b>flu like symtoms</b>. Progressing into a few months to several years, the patient may continue to feel and look healthy but under it, the virus continues to replicate and destroy T cells. Until the T cell counts drop too low, patients would be at risk of contracting deadly infections that normally healthy immune systems can handle well. This stage of HIV infection then progresses to <b>AIDS</b>.</p>
+                    </div>
+    
+                    <div class="rightpic">
+                        <div class="composite">
+                            <img class="textmarginleft textmarginright" src="./pictures/Antiretroviral.jpeg" title="Antiretrovirals" height="200px">
+                        </div>
+                        <p>So, is there a cure at this moment for HIV? No there isn&apos;t as for now, but there is <b>antiretroviral therapy</b> in which is very effective in managing levels of HIV, help patients to live long and healthy lives and lessen the likelihood of infecting others. These medications however require <b>active maintenance</b>, most HIV patients keep taking their drugs for the rest of their lives as the HIV virus might make a deadly comeback if they stop. HIV virus are rather complex and hides out in places of the body where the drug cannot reach inside of healthy T cells, thus even if every HIV virus is wiped out from an infected person&apos;s body, chances are the hidden virus in the healthy T cells can activate again and start spreading. Another major factor to why HIV is so hard to cure is due to the <b>lack of access</b> to therapies in some areas of the world. Sub-Saharan  Africa accounts for over 70% of HIV patients worldwide, antiretrovirals reached only about one in three HIV-positive patients in 2012. So long as these problem remain, so will HIV. </p>
+                        </div>
+                    <div>
+                        <p>Despite so, not all hope is lost as research today are still working towards finding an absolute cure for the diseases that claims more than 10,000 lives per year and many had shown promising futures. Some include using a drug to activate all cells harboring the HIV genetic strands, this would flush the virus out to where current drugs are effective. Other looks at using genetic tools to cut the HIV DNA out of cells genome altogether. While one cure out of 70 million cases may seem like terrible odds, one is still better than zero, and who knows, it may lead us to its remedy.</p>
+                    </div>
+                    <div class="links">
+                        <!--extra readings-->
+                        <p class="title2">Extra Readings:</p>
+                            <ol>
+                                <li>HIV/AIDS Medicines: <a href="https://medlineplus.gov/hivaidsmedicines.html" target="_blank">https://medlineplus.gov/hivaidsmedicines.html</a></li>
+                                <li>Do I Have HIV? : <a href="https://www.webmd.com/hiv-aids/do-i-have-hiv" target="_blank">https://www.webmd.com/hiv-aids/do-i-have-hiv</a></li>
+
+                            </ol>
+                    </div>
+            </article>
+            <div>
+                <nav class="small">
+                    <div class="about">
+                        <p><b class="navheading">ABOUT</b><br><br>Welcome to an issue of <b>A-HA! MOMENTS<sub>WEB1201</sub></b>. This is a webpage consists of information ranging from <span style="color: rgb(4, 183, 4)">Science</span> and <span style="color:blue">Technology</span> to <span style="color: purple">Economics</span> and <span style="color: rgb(190, 147, 66)">History</span>! Below is the list contents for this issue and hope you have a fun time reading!</p>
+                            </p>
+                            </div>
+    
+                    <div class="navcontent">
+                        <p><b class="navheading">CONTENTS</b>
+                        <ul>
+                            <li><a href="zoological.html">Zoological Tales</a></li>
+                            <li><a href="getting.html">Getting Under Our Skin</a></li>
+                            <li><a href="brain.html">Brain Discoveries</a></li>
+                            <li><a href="tech.html">Technology Era</a></li>
+                            <li><a href="troubleshooting.html">Troubleshooting The World</a></li>
+                            <li><a href="history.html">Facing Our Ugly History</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="credits">
+                        <p><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></p>
+                        <div>All information displayed in the webpage was from the source: TED-Ed. I did not write nor come up with these information.</div>
+                    </div>
+                </nav>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <div><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b> / <i class="date">June 2022</i></div>
+            </div>
+        </footer>
+
+        <script src="./javascripts/slides.js">
+        </script>
+    </body>
+</html>

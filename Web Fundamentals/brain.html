@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>A-HA! moments: Brain Discoveries</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" content="science, history, facts..">
+        <meta name="description" content="interesting facts">
+
+        <link rel="stylesheet" href="./static/design2.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Prompt:wght@500&family=Raleway:wght@600;700&family=Rubik:wght@500&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+        <style>
+            .s1{
+                border: none;
+                width: 315px;
+                float: right;
+            }
+            .slides{
+                display: none;
+            }
+            .container{
+                position: relative;
+                width: 325px;
+               
+            }
+            .prev, .next{
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 25px;
+                padding: 7px 7px;
+                top: 41%;
+                transition: all 0.1s ease;
+            }
+            .prev{
+                position:absolute;
+                left:10px;
+            }
+            .next{
+                position:absolute;
+                right: 10px;
+            }
+            .next:hover{
+                right: 4px;
+            }
+            .prev:hover{
+                left: 4px;
+            }
+            .dot{
+                cursor: pointer;
+                height: 5px;
+                width: 20px;
+                background-color:#bbb;
+                display: inline-block;
+                transition: background-color 0.7s ease;
+            }
+            .active, .dot:hover{
+                background-color: black;
+            }   
+            .fade{
+                animation-name: fade;
+                animation-duration: 0.7s;
+            }
+            @keyframes fade{
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            @media screen and (max-width: 670px){
+                .container{
+                    width:300px;
+                    height: 300px;
+                }
+                .s1{
+                    width:300px;
+                }
+                .dotCont{
+                    width: 300px;
+                }
+                .prev, .next{
+                    top: 45%;
+
+                }
+                .container img{
+                    height:270px;
+                }
+            }
+            @media screen and (max-width: 500px){
+                .container{
+                    height: 300px;
+                    width: 250px;
+                    margin-left: -50px;
+                }
+                .s1{
+                    width:250px;
+                }
+                .dotCont{
+                    width: 250px;
+                    margin-left: -50px;
+                }
+                .container img{
+                    height:270px;
+                }
+                .prev{
+                    font-size: 25px;
+                    padding-left: 0px;
+                    top: 42%;
+                }
+                .next{
+                    font-size: 25px;
+                    padding-right: 0px;
+                    top: 42%;
+                }
+
+            }
+            @media screen and (max-width: 1050px){
+                .s1{
+                    float: none;
+                    margin-left: 18%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="flexbox">
+            <div class="logo">
+                <p><a href="index.html"><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></a><br>
+                A webpage project by Than Hui Ru</p>
+            </div>
+                <!--top right nav bar-->
+            <div class="topright">
+                    <a href="about.html">About</a>
+                    <a href="subscription.html">Subscription</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="references.html">References</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton">
+                    <img class="icon" src="./pictures/chevron-down.svg">
+                </button>
+                <div class="dropdown-content">
+                    <a href="about.html">About</a>
+                    <a href="subscription.html">Subscription</a>
+                    <a href="suggestions.html">Suggestions</a>
+                    <a href="references.html">References</a>
+                </div>                       
+            </div>
+        </header>
+        <!--navigation bar-->
+        <div>
+            <nav class="rightnav">
+                <div class="about">
+                    <p><b class="navheading">ABOUT</b><br><br>Welcome to an issue of <b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span><sub>WEB1201</sub></b>. This is a webpage consists of information ranging from <span style="color: rgb(4, 183, 4)">Science</span> and <span style="color:blue">Technology</span> to <span style="color: purple">Economics</span> and <span style="color: rgb(190, 147, 66)">History</span>! Below is the list contents for this issue and hope you have a fun time reading!</p>
+                </div>
+
+                <div class="navcontent">
+                    <p><b class="navheading">CONTENTS</b></p>
+                    <ul>
+                        <li><a href="zoological.html">Zoological Tales</a></li>
+                        <li><a href="getting.html">Getting Under Our Skin</a></li>
+                        <li><a href="brain.html">Brain Discoveries</a></li>
+                        <li><a href="tech.html">Technology Era</a></li>
+                        <li><a href="troubleshooting.html">Troubleshooting The World</a></li>
+                        <li><a href="history.html">Facing Our Ugly History</a></li>
+                    </ul>
+                </div>
+
+                <div class="share">
+                    <p><b>Found this interesting? Share with a friend :)</b></p>
+                    <div class="iconbar">
+                        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/brain.html&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                        <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/brain.html&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                        <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/brain.html#"><img src="./pictures/twitter.svg"></a>
+                        <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/brain.html"><img src="./pictures/whatsapp.svg"></a>
+                    </div>
+                </div>
+
+                <div class="credits">
+                    <p><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></p>
+                    <div>All information displayed in the webpage was from the source: TED-Ed. I did not write nor come up with these information.</div>
+                </div>
+            </nav>
+        </div>
+
+        <!--sidenav-->
+        <div class="sideicon">
+            <div>
+                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://xoxo2002.github.io/brain.html&quote=Awesome%20Blog!"><img src="./pictures/facebook.svg"></a>
+                <a class="messenger" href="https://www.reddit.com/submit?url=https://xoxo2002.github.io/brain.html&title=Awesome%20Blog!"><img src="./pictures/reddit.svg"></a>
+                <a class="twitter" href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://xoxo2002.github.io/brain.html#"><img src="./pictures/twitter.svg"></a>
+                <a class="whatsapp" href="https://wa.me/?text=Awesome%20Blog!%5Cn%20https://xoxo2002.github.io/brain.html"><img src="./pictures/whatsapp.svg"></a>
+            </div>
+        </div>
+ 
+        <main>
+            <article>
+                <div class="title">
+                    Brain Discoveries
+                    <p class="title2">At What Moment Are You Dead?</p>
+                </div>  
+
+                <div class="leftpic">
+                    <div class="composite">
+                        <img class="textmarginright" src="pictures/vitalism.jpeg" title="vitalism" style="height:250px">
+                    </div>
+                    <p><span style=" margin-top: 7px;margin-right: 2px; float:left; width: 0.7em; font-size:320%; line-height:80%">T</span>hroughout history, attempts had been made to understand the human life, what makes it alive, and what happens when one dies? What is death? <b>Vitalism</b> is one of the most widespread school of explanation in ancient times and can be tracked across different civilization. Some call them Qi, others call them lifeblood, or humors but all of them boils down to the belief that living things were unique because they were filled with a special substance, or energy deemed as the essence of life. Stories of the creatures who can drain life from others, or some form of magical source that can replenish it still persist today. However, vitalism faded in the western world during the <b> Scientific Revolution</b in the 17th century, and from then onwards, solutions to that question took more scientific turns. </p>
+                </div>
+                    <div class="s1">
+                        <div class="container">
+                            <div style="text-align: center">
+                                    <div class="slides fade">
+                                        <img src="pictures/rene.jpeg" title="René Descartes" height="350px">
+                                        <div class="caption">René Descartes</div>
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="pictures/duncan.png" title="Dr. Duncan McDougall" height="350px">
+                                        <div class="caption">Dr. Duncan McDougall</div>
+                                    </div>
+                                    <div class="slides fade">
+                                        <img src="pictures/soulmass.jpeg" title="Article of Dr Duncan&apos;s research" height="350px">
+                                        <div class="caption">Research article by Dr Duncan</div>
+                                    </div>
+                                </div>   
+                                <div class="prev" onclick="nextSlides(-1)">❮</div>
+                                <div class="next" onclick="nextSlides(1)">❯</div>
+                        </div>
+                        <div class="dotCont" style="text-align: center;">
+                            <span class="dot" onclick="currentSlides(0)"></span>
+                            <span class="dot" onclick="currentSlides(1)"></span>
+                            <span class="dot" onclick="currentSlides(2)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                    <p>Attempts were made to explain the notion of life and death in the past, but much were discredited:</p>
+                    <ul>
+                        <li><b>René Descartes</b> advanced the notion   that the human body was essentially no different from any other machine,   brought to life by a divinely created soul located in the brain&apos;s pineal gland.</li>
+                        <li>In 1907, <b>Dr. Duncan McDougall</b> even claimed that the soul had mass,   weighing patients immediately before and after death in an attempt to prove it.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Today, we no longer believe that life is contained in some magical substance or energy but within the ongoing biological processes themselves. Inside out body contains individual cells and in these individual cells, chemical reactions are constantly occurring, powered by glucose and oxygen which our body convert into energy carrying molecule known as <b>ATP</b>(<i>Adenosine Triphosphate</i>) which is the source of energy for cells to do what it does, including growth and reproduction. </p>
+                </div>
+
+                <div class="leftpic">
+                    <div class="composite">
+                        <img class="textmarginright" src="./pictures/death.webp" title="death" height="150px">
+                    </div>
+                    <p style="margin-top: 0px;">The universal phenomenon of <b>entropy</b> means that molecules will tend towards diffusing randomly, move around or even breaking apart into smaller atoms and molecules.  For the cells to keep entropy in check, it requires energy so to maintain the complex formation of molecules. When the cells in your body had succumbed to entropy, it breaks down and can no longer perform the biological task it does and ultimately results to <b>death</b>.</p>
+                </div>
+
+                <div class="links">
+                    <!--extra readings-->
+                        <p class="title2">Extra Readings:</p>
+                        <ol>
+                            <li>The Law of Entropy and the Aging Process: <a href="https://www.researchgate.net/profile/Thomas-Samaras/publication/18738623_The_Law_of_Entropy_and_the_Aging_Process/links/569e71f608ae4af5254463bf/The-Law-of-Entropy-and-the-Aging-Process.pdf" target="_blank">https://www.researchgate.net/profile/Thomas-Samaras/publication/18738623_The_Law_of_Entropy_and_the_Aging_Process/links/569e71f608ae4af5254463bf/The-Law-of-Entropy-and-the-Aging-Process.pdf</a></li>
+                        </ol>
+                </div>
+
+            </article>
+            <div>
+                <nav class="small">
+                    <div class="about">
+                        <p><b class="navheading">ABOUT</b><br><br>Welcome to an issue of <b>A-HA! MOMENTS<sub>WEB1201</sub></b>. This is a webpage consists of information ranging from <span style="color: rgb(4, 183, 4)">Science</span> and <span style="color:blue">Technology</span> to <span style="color: purple">Economics</span> and <span style="color: rgb(190, 147, 66)">History</span>! Below is the list contents for this issue and hope you have a fun time reading!</p>
+                            </p>
+                            </div>
+    
+                    <div class="navcontent">
+                        <p><b class="navheading">CONTENTS</b>
+                        <ul>
+                            <li><a href="zoological.html">Zoological Tales</a></li>
+                            <li><a href="getting.html">Getting Under Our Skin</a></li>
+                            <li><a href="brain.html">Brain Discoveries</a></li>
+                            <li><a href="tech.html">Technology Era</a></li>
+                            <li><a href="troubleshooting.html">Troubleshooting The World</a></li>
+                            <li><a href="history.html">Facing Our Ugly History</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="credits">
+                        <p><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b></p>
+                        <div>All information displayed in the webpage was from the source: TED-Ed. I did not write nor come up with these information.</div>
+                    </div>
+                </nav>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <div>
+            <div><b><span style="color:red">A-HA!</span> <span style="color:orange">M</span><span style="color:green">O</span><span style="color:blue">M</span><span style="color:purple">E</span><span style="color:red">N</span><span style="color:orange">T</span><span style="color:green">S</span></b> / <i class="date">June 2022</i></div>
+        </div>
+    </footer>
+
+    <script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+    //for the next or previous buttons
+    function nextSlides(n){
+        showSlides(slideIndex += 1);
+    }
+    //for jumping to slides
+    function currentSlides(n){
+        showSlides(slideIndex = n);
+    }
+    //logic to show which slide according to n
+    function showSlides(n){
+        let i;
+        let slides;
+        slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        //for next slides
+        if(n<0){
+            slideIndex = slides.length - 1;
+        }
+        if(n >= slides.length){
+            slideIndex = 0;
+        }
+        //undisplay other pictures and dots then only display the one u wan 
+        for(i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+    }
+    </script>
+
+</html>
