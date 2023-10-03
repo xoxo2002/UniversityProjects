@@ -1,0 +1,34 @@
+.pane{
+    -fx-pref-height: 400;
+    -fx-pref-width: 600;
+}
+.anchor{
+    -fx-background-image: url("images/background.png");
+    -fx-background-size: contain;
+}
+.pinkDiamond{
+    -fx-image: url("images/pinkDiamond.png");
+}
+.greenDiamond{
+    -fx-image: url("images/greenDiamond.png");
+}
+.brownDiamond{
+    -fx-image: url("images/brownDiamond.png");
+}
+.tab{
+    -fx-background-color: #ffffff ;
+}
+.button{
+    -fx-pref-height: 39;
+    -fx-pref-width: 64;
+}
+.platforms{
+    -fx-image: url("images/longpinkplatform.png");
+    -fx-fit-to-width: 160;
+    -fx-fit-to-height: 25;
+}
+.lives{
+    -fx-image: url("images/lives.png");
+    -fx-fit-to-width: 30;
+    -fx-fit-to-height: 30;
+}
