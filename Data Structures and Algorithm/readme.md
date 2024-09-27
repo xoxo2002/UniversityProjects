@@ -1,5 +1,6 @@
 # Dijkstra's Algorithm for Route Planning
 ![Shortest route visualisation using Djikstra's Algorithm](img.png)
+
 ## Overview
 
 This is a project under CSC2103 Data Structures and Algorithm. This Python program helps users find the shortest path between two locations using **Dijkstra's Algorithm**. The program fetches data from **OpenStreetMap** and calculates optimal routes based on the user’s input preferences, including **mode of transportation** (driving, biking, or walking) and an **optimization factor** (time or distance). The final result includes the total travel distance, estimated travel time, and a visual map generated in HTML.
