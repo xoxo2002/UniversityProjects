@@ -3,7 +3,7 @@
 - [Directory Structure](#directory)
 - [Usage](#usage)
   
-![Output](output.png)
+![Output](output2.png)
 
 ## Installation
 
