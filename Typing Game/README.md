@@ -4,6 +4,7 @@
 This project is a part of my **Object-Oriented Programming (PRG2104)** coursework. It involves developing a GUI-based game, where the player controls a bunny that leaps onto platforms by typing words correctly. The goal of the game is to promote fast and accurate typing through engaging gameplay. The player must type the displayed words correctly to move forward, while managing a timer, score, and limited lives. This project was built using **Scala** and the **ScalaFX** library, incorporating **SceneBuilder** for UI design. To see a live demonstration of the game, head to this link: [Demonstration Video](https://youtu.be/HAya4sCpurE)
 
 ![Game Main Menu](media/main-menu.gif)
+![Game](media/game.gif)
 
 ## Game Features
 - **Main Menu**: The game starts here, offering options to view instructions or begin the game.
