@@ -13,11 +13,9 @@ As IC chips are produced in large volumes, manual inspection is inefficient. Thi
 
 ## 1.2 Achieved Outcome
 The proposed system successfully developed an AI-based approach combining traditional image processing for segmentation and AI-based models for defect detection. This hybrid system achieved an accuracy of 93.72%, significantly reducing overkills. For a demonstration of the system:
-Surface defect detection module: [surface-demo](https://youtu.be/p9xHZAjoMDI)
-
-Markings defect detection module: [markings-demo](https://youtu.be/PVxrwRfWdhI)
-
-Combined model: [combined-demo](https://youtu.be/mnirX32ud20)
+- Surface defect detection module: [surface-demo](https://youtu.be/p9xHZAjoMDI)
+- Markings defect detection module: [markings-demo](https://youtu.be/PVxrwRfWdhI)
+- Combined model: [combined-demo](https://youtu.be/mnirX32ud20)
 
 ## 2.0 Research Aims, Objectives and Scope
 - **Aims**: To create an AI-based system to enhance IC chip quality control.
