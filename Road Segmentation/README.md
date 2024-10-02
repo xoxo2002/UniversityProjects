@@ -2,6 +2,8 @@
 - [Installation](#installation)
 - [Directory Structure](#directory)
 - [Usage](#usage)
+  
+[Output](output.png)
 
 ## Installation
 
